@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style-position: inside;
+  list-style-type: none;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+body {
+  height: 100vh;
+}

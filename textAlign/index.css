@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style-position: inside;
+  list-style-type: none;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+body {
+  height: 100vh;
+}
+div {
+  border: 1px solid black;
+}
+span {
+  display: inline-block;
+  width: 4em;
+  line-height: 1;
+  height: 1em;
+  /* border: 1px solid blue; */
+  
+  overflow: hidden;
+  text-align: justify;
+}
+span::after {
+  content: '';
+  display: inline-block;
+  border: 1px solid green;
+  width: 100%;
+}
