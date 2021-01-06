@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ol,
+ul {
+  border: 1px solid black;
+  /* list-style-type:none; */
+}
+li {
+  list-style-position: inside;
+  list-style-type: none;
+}
+body {
+  height: 100vh;
+}
+.father {
+  border: 1px solid black;
+}
+.son1 {
+  border: 1px solid green;
+}
+.son2 {
+  border: 1px solid red;
+}
+.son3 {
+  border: 1px solid blue;
+}
+ul {
+  border: 1px solid black;
+}
+li {
+  border: 1px solid purple;
+}
