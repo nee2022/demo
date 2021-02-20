@@ -4,11 +4,20 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+        <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
         <link rel="stylesheet" href="./index.css" />
         <script type="text/javascript" src="https://webapi.amap.com/maps?v=2.0&key=173ea4aa2fbc1a1d3d20c83775e4e224&plugin=AMap.ToolBar"></script>
+        <script type="text/javascript" src="https://a.amap.com/jsapi_demos/static/citys.js"></script>
         <script type="text/javascript" src="./index.js" async></script>
     </head>
     <body>
-        <div id="container"></div>
+        <div id="container" class="map" tabindex="0"></div>
+        <div class="input-card">
+            <h4>海量点效果切换</h4>
+            <div class="input-item">
+                <input type="button" class="btn" value="单一图标" onclick="setStyle(0)" />
+                <input type="button" class="btn" value="多个图标" onclick="setStyle(1)" />
+            </div>
+        </div>
     </body>
 </html>
